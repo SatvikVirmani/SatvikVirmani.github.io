@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="./js/index.js"></script>
+        <script src="https://kit.fontawesome.com/eb1607bdca.js" crossorigin="anonymous"></script>
+        <script src="./js/uikit-icons.min.js"></script>
+        <script src="./js/uikit.min.js"></script>
+        <script src="./js/progressbar.min.js"></script>
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f605a9aedaeb70012ee7831&product=inline-follow-buttons" async="async"></script>
+        <link rel="stylesheet" href="./css/uikit.min.css">
+        <link rel="stylesheet" href="./css/projects.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+        <title>Satvik Virmani-Projects</title>
+    </head>
+    <body>
+    <!--====================Navigation Bar====================-->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html">
+                    <img src="./image/logo.svg" alt="Logo" class="logo">
+                    <div class="logo-divider"></div>
+                    <div class="logo-text">
+                        <h1>Satvik Virmani</h1>
+                    </div>
+                </a>
+                <ul class="nav">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link nav-link-active">Projects</a></li>
+                    <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="toggle-btn" id="toggle-btn">
+                    <div class="bars">            
+                        <div class="topbar"></div>
+                        <div class="middlebar"></div>
+                        <div class="bottombar"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#" class="nav-link-active">Projects</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="blogs.html">Blogs</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/satvik.virmani.9"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/satvik_virmani/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/SatvikVirmani"><i class="fab fa-github"></i></a>
+                        <a href="https://medium.com/@satvikvirmani"><i class="fab fa-medium"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $(".bars").click(function(){
+                    $(".mobile-nav").toggleClass("opennav");
+                    $(".topbar").toggleClass("opentop");
+                    $(".middlebar").toggleClass("openmiddle");
+                    $(".bottombar").toggleClass("openbottom");
+                });
+                });
+        </script>
+    </header>
+    <!--====================End====================-->
+    <main>
+        <h1 class="uk-heading-line uk-text-center"><span>My Projects</span></h1>
+		<div id="myBtnContainer" class="button-grid">
+			<button class="uk-button uk-button-default active" onclick="filterSelection('all')">All</button>
+			<button class="uk-button uk-button-default" onclick="filterSelection('html/css')">Html / CSS</button>
+            <button class="uk-button uk-button-default" onclick="filterSelection('python')">Python</button>
+            <button class="uk-button uk-button-default" onclick="filterSelection('javascipt')">Javascript</button>
+            <button class="uk-button uk-button-default" onclick="filterSelection('machine')">Machine Learning</button>
+	    </div>
+            <div class="uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l" uk-grid="masonry: true">
+                <div class="column javascipt">
+                    <a class="uk-link-text" href="#wikipedia-api" uk-toggle>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./image/projects/project01.jpg" alt="">
+                                <div class="uk-transition-slide-top-medium uk-position-top uk-overlay uk-overlay-primary uk-light uk-padding-small">
+                                    <span class="uk-label label">NodeJS</span>
+                                    <p class="uk-h4 uk-margin-remove"><i class="logo-icon fab fa-node-js"></i>Electron JS</p>
+                                </div>
+                                <div class="uk-transition-slide-bottom-medium uk-position-bottom uk-overlay uk-overlay-primary uk-light uk-padding">
+                                    <p class="uk-h6 uk-margin-remove">A Web search App using wikipedia API that gives you top search results from Wikipedia.</p>
+                                </div>
+                            </div>
+                            <p class="uk-margin-small-top">Wikipedia App</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column html/css">
+                    <a class="uk-link-text" href="#art_me" uk-toggle>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./image/projects/project02.jpg" alt="">
+                                <div class="uk-transition-slide-top-medium uk-position-top uk-overlay uk-overlay-primary uk-light uk-padding-small">
+                                    <span class="uk-label label">HTMl/CSS</span>
+                                    <p class="uk-h4 uk-margin-remove"><i class="logo-icon fab fa-html5"></i>Website</p>
+                                </div>
+                                <div class="uk-transition-slide-bottom-medium uk-position-bottom uk-overlay uk-overlay-primary uk-light">
+                                    <p class="uk-h6 uk-margin-remove">A responsive website for artists and painters made with bare coding in HTML / CSS / Javascript.</p>
+                                </div>
+                            </div>
+                            <p class="uk-margin-small-top">Art_Me</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column machine python">
+                    <a class="uk-link-text" href="#titanic" uk-toggle>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./image/projects/project03.jpg" alt="">
+                                <div class="uk-transition-slide-top-medium uk-position-top uk-overlay uk-overlay-primary uk-light uk-padding-small">
+                                    <span class="uk-label label">Python</span>
+                                    <p class="uk-h4 uk-margin-remove"><i class="logo-icon fab fa-python"></i>Machine Learning</p>
+                                </div>
+                                <div class="uk-transition-slide-bottom-medium uk-position-bottom uk-overlay uk-overlay-primary uk-light">
+                                    <p class="uk-h6 uk-margin-remove">A machine learning program that builds model on titanic data and predict if you would be dead or alive.</p>
+                                </div>
+                            </div>
+                            <p class="uk-margin-small-top">Titanic Predictor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column html/css">
+                    <a class="uk-link-text" href="#fitness" uk-toggle>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./image/projects/project04.jpg" alt="">
+                                <div class="uk-transition-slide-top-medium uk-position-top uk-overlay uk-overlay-primary uk-light uk-padding-small">
+                                    <span class="uk-label label">HTML/CSS</span>
+                                    <p class="uk-h4 uk-margin-remove"><i class="logo-icon fab fa-html5"></i>Website</p>
+                                </div>
+                                <div class="uk-transition-slide-bottom-medium uk-position-bottom uk-overlay uk-overlay-primary uk-light">
+                                    <p class="uk-h6 uk-margin-remove">A website for a multipurpose quality GYM with minimilistic design and responsive design.</p>
+                                </div>
+                            </div>
+                            <p class="uk-margin-small-top">Fitness File</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column python">
+                    <a class="uk-link-text" href="#entry" uk-toggle>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./image/projects/project05.jpg" alt="">
+                                <div class="uk-transition-slide-top-medium uk-position-top uk-overlay uk-overlay-primary uk-light uk-padding-small">
+                                    <span class="uk-label label">Python</span>
+                                    <p class="uk-h4 uk-margin-remove"><i class="logo-icon fab fa-python"></i>GUI App</p>
+                                </div>
+                                <div class="uk-transition-slide-bottom-medium uk-position-bottom uk-overlay uk-overlay-primary uk-light">
+                                    <p class="uk-h6 uk-margin-remove">A GUI app written in Python[Tkinter] that holds relevant information about students in a collage.</p>
+                                </div>
+                            </div>
+                            <p class="uk-margin-small-top">Entry Maker</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column html/css">
+                    <a class="uk-link-text" href="#color-world" uk-toggle>
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="./image/projects/project06.jpg" alt="">
+                                <div class="uk-transition-slide-top-medium uk-position-top uk-overlay uk-overlay-primary uk-light uk-padding-small">
+                                    <span class="uk-label label">HTML/CSS</span>
+                                    <p class="uk-h4 uk-margin-remove"><i class="logo-icon fab fa-html5"></i>Website</p>
+                                </div>
+                                <div class="uk-transition-slide-bottom-medium uk-position-bottom uk-overlay uk-overlay-primary uk-light">
+                                    <p class="uk-h6 uk-margin-remove">A Colorfull website for artists and sketch artists with hundreds of hues with responsive designing.</p>
+                                </div>
+                            </div>
+                            <p class="uk-margin-small-top">Color World</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+            }
+
+            function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+            }
+
+            function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("uk-button");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        </script>
+    </main>
+
+        <div id="wikipedia-api" uk-modal style="top: 80px !important">
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Wikipedia API</h2>
+                </div>
+                <div class="uk-modal-body">
+                    Languages: Javascript <br>
+                    Library/Module: NodeJS | ElectronJS
+                   <img data-src="./image/projects/Screenshot05.png" width="" height="50%" alt="" uk-img>
+                    <p>
+                        A Wikipedia Search app built on ElectronJS and wikipedia-api thats search throughtout the wikipedia database and finds top 20 relevant search results and display them in a nice tidy theme. Also, it has a random option clicking which takes you to a random search increasing your knowledge more and more everyday.
+                    </p>
+                    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button"><a href="" style="color: #fff !important;">Download from Github</a></button> <br>
+                    <div class="uk-margin-auto">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-primary uk-button-small uk-margin-small" type="button">Follow</button>
+                            <div uk-dropdown="pos: bottom-justify;mode: click">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <a href="http://https://www.instagram.com/satvik_virmani/"><i class="fab fa-instagram"></i> Instagram</a><br>
+                                    <a href="http://https://github.com/SatvikVirmani"><i class="fab fa-github"></i> Github</a><br>
+                                    <a href="http://https://medium.com/@satvikvirmani"><i class="fab fa-medium"></i> Medium</a><br>
+                                    <a href="https://twitter.com/SatvikVirmani?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SatvikVirmani</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-button-small" type="button" disabled>Previous</button>
+                    <a href="#art_me" class="uk-button uk-button-primary uk-button-small" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+        <div id="art_me" uk-modal style="top: 80px !important">
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Art Me</h2>
+                </div>
+                <div class="uk-modal-body">
+                    Languages:  Html | CSS | Javascript <br>
+                    Library/Module: Bootstrap | Font Awesome
+                   <img data-src="./image/projects/Screenshot03.png" width="" height="50%" alt="" uk-img>
+                    <p>
+                        A Website exclusively for artists and sketch artists built solely on Html/CSS/Javascript that has all basic section for selling your art like order section/projects showcase. It has a responsive design for tablet and mobile devices with a gorgeous theme.
+                    </p>
+                    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button"><a href="https://github.com/SatvikVirmani/Art_Me" style="color: #fff !important;">Download from Github</a></button> <br>
+                    <div class="uk-margin-auto">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-primary uk-button-small uk-margin-small" type="button">Follow</button>
+                            <div uk-dropdown="pos: bottom-justify;mode: click">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <a href="http://https://www.instagram.com/satvik_virmani/"><i class="fab fa-instagram"></i> Instagram</a><br>
+                                    <a href="http://https://github.com/SatvikVirmani"><i class="fab fa-github"></i> Github</a><br>
+                                    <a href="http://https://medium.com/@satvikvirmani"><i class="fab fa-medium"></i> Medium</a><br>
+                                    <a href="https://twitter.com/SatvikVirmani?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SatvikVirmani</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#wikipedia-api" class="uk-button uk-button-default uk-button-small" uk-toggle>Previous</a>
+                    <a href="#titanic" class="uk-button uk-button-primary uk-button-small" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+        <div id="titanic" uk-modal style="top: 80px !important">
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Titanic Predictor</h2>
+                </div>
+                <div class="uk-modal-body">
+                    Languages: Python <br>
+                    Library/Module: Matplotlib | Tkinter | Numpy | Sklearn
+                   <img data-src="./image/projects/Screenshot06.png" width="" height="50%" alt="" uk-img>
+                    <p>
+                        A GUI python application thats reads the real titanic data and builds a machine learning model on it to solve the Classification problem (ie. a person with specific class, age, gender, etc would survive the titanic sink or not). The main person of this program is show how classification models work rather than solving problems.
+                    </p>
+                    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button"><a href="" style="color: #fff !important;">Download from Github</a></button> <br>
+                    <div class="uk-margin-auto">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-primary uk-button-small uk-margin-small" type="button">Follow</button>
+                            <div uk-dropdown="pos: bottom-justify;mode: click">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <a href="http://https://www.instagram.com/satvik_virmani/"><i class="fab fa-instagram"></i> Instagram</a><br>
+                                    <a href="http://https://github.com/SatvikVirmani"><i class="fab fa-github"></i> Github</a><br>
+                                    <a href="http://https://medium.com/@satvikvirmani"><i class="fab fa-medium"></i> Medium</a><br>
+                                    <a href="https://twitter.com/SatvikVirmani?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SatvikVirmani</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#art_me" class="uk-button uk-button-default uk-button-small" uk-toggle>Previous</a>
+                    <a href="#fitness" class="uk-button uk-button-primary uk-button-small" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+        <div id="fitness" uk-modal style="top: 80px !important">
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Fitness File</h2>
+                </div>
+                <div class="uk-modal-body">
+                    Languages:  Html | CSS | Javascript <br>
+                    Library/Module: MapBox | Font Awesome | Parallax.js
+                   <img data-src="./image/projects/Screenshot02.png" width="" height="50%" alt="" uk-img>
+                    <p>
+                        A website for a high quality multipurpose GYM thats offers services like aerobics, gym, massage. The website design is based on dark theme and minimilistic design and has a responsive design especially for Tablet and mobile devices with easy to access call and email buttons.
+                    </p>
+                    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button"><a href="" style="color: #fff !important;">Download from Github</a></button> <br>
+                    <div class="uk-margin-auto">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-primary uk-button-small uk-margin-small" type="button">Follow</button>
+                            <div uk-dropdown="pos: bottom-justify;mode: click">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <a href="http://https://www.instagram.com/satvik_virmani/"><i class="fab fa-instagram"></i> Instagram</a><br>
+                                    <a href="http://https://github.com/SatvikVirmani"><i class="fab fa-github"></i> Github</a><br>
+                                    <a href="http://https://medium.com/@satvikvirmani"><i class="fab fa-medium"></i> Medium</a><br>
+                                    <a href="https://twitter.com/SatvikVirmani?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SatvikVirmani</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#titanic" class="uk-button uk-button-default uk-button-small" uk-toggle>Previous</a>
+                    <a href="#entry" class="uk-button uk-button-primary uk-button-small" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+        <div id="entry" uk-modal style="top: 80px !important">
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Entry Maker</h2>
+                </div>
+                <div class="uk-modal-body">
+                    Languages: Python <br>
+                    Library/Module: Tkinter | Random | Messagebox
+                   <img data-src="./image/projects/Screenshot04.png" width="" height="50%" alt="" uk-img>
+                    <p>
+                        A GUI Python app build on tkinter module having multiple frames and inter-connectivity with each other. It records information about students and then provide them with a unique password. The main feature of app is that is stores the info in the database (ie. information is retained even after app is closed). Then if you want to search info you simply enter your unique password and your information is shown.
+                    </p>
+                    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button"><a href="https://github.com/SatvikVirmani/Entry-Maker" style="color: #fff !important;">Download from Github</a></button> <br>
+                    <div class="uk-margin-auto">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-primary uk-button-small uk-margin-small" type="button">Follow</button>
+                            <div uk-dropdown="pos: bottom-justify;mode: click">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <a href="http://https://www.instagram.com/satvik_virmani/"><i class="fab fa-instagram"></i> Instagram</a><br>
+                                    <a href="http://https://github.com/SatvikVirmani"><i class="fab fa-github"></i> Github</a><br>
+                                    <a href="http://https://medium.com/@satvikvirmani"><i class="fab fa-medium"></i> Medium</a><br>
+                                    <a href="https://twitter.com/SatvikVirmani?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SatvikVirmani</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#fitness" class="uk-button uk-button-default uk-button-small" uk-toggle>Previous</a>
+                    <a href="#color-world" class="uk-button uk-button-primary uk-button-small" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+        <div id="color-world" uk-modal style="top: 80px !important">
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Color World</h2>
+                </div>
+                <div class="uk-modal-body">
+                    Languages:  Html | CSS | Javascript <br>
+                    Library/Module: Font Awesome
+                   <img data-src="./image/projects/Screenshot01.png" width="" height="50%" alt="" uk-img>
+                    <p>
+                        A website for arists, sketch, craftsman built using html/css/javascript that has multicolor design and interface. It has many sections like project showcase, order section. The best feature of the website is that as the name depicts and themes is sololy based on different hues (colors). Also it has a responsive design for devices of various resolutions.
+                    </p>
+                    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button"><a href="https://github.com/SatvikVirmani/Color-World" style="color: #fff !important;">Download from Github</a></button> <br>
+                    <div class="uk-margin-auto">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-primary uk-button-small uk-margin-small" type="button">Follow</button>
+                            <div uk-dropdown="pos: bottom-justify;mode: click">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <a href="http://https://www.instagram.com/satvik_virmani/"><i class="fab fa-instagram"></i> Instagram</a><br>
+                                    <a href="http://https://github.com/SatvikVirmani"><i class="fab fa-github"></i> Github</a><br>
+                                    <a href="http://https://medium.com/@satvikvirmani"><i class="fab fa-medium"></i> Medium</a><br>
+                                    <a href="https://twitter.com/SatvikVirmani?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SatvikVirmani</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#entry" class="uk-button uk-button-default uk-button-small" uk-toggle>Previous</a>
+                    <button class="uk-button uk-button-default uk-button-small" type="button" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+    <!--====================Footer====================-->
+    <footer>
+        <div class="footer">
+            Author: Satvik Virmani <br>
+            Email: <a href="mailto:">virmanisatvik01@gmail.com</a> <br>
+            Copyright <i class="far fa-copyright"></i><a href="index.html">Satvik Virmani</a> All Rights Reserved
+        </div>
+    </footer>
+    <!--====================End====================-->
+    </body>
+</html>

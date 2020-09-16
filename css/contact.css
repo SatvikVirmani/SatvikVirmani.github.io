@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 20px;
+    margin: 80px auto;
+    width: min-content;
+    height: 60vh;
+}
+.form{
+    position: relative;
+}
+h1{
+    font-size: 3rem !important;
+}
+h4{
+    font-size: 1rem !important;
+    padding: 0 !important;
+    margin-top: -30px !important;
+}
+input{
+    margin: 10px 0 !important;
+    border-radius: 4pt !important;
+}
+textarea{
+    margin: 10px 0 !important;
+    border-radius: 4pt !important;
+}
+label{
+    margin-top: -30px !important;
+}
+button{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 600px){
+    h4{
+        margin-top: -20px !important;
+    }
+    section{
+        margin: 80px auto;
+        width: 80%;
+    }
+    input,textarea{
+        width: 100% !important;
+    }
+}

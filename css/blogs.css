@@ -1,0 +1,21 @@
+h1{
+    font: normal normal 400 40px Quicksand,serif !important;
+}
+ul {
+ list-style: none;
+}
+p:hover{
+    text-decoration: none !important;
+}
+section{
+    margin: 80px auto;
+    width: 80%;
+}
+.navigate-left{
+    position: absolute !important;
+    left: -8% !important;
+}
+.navigate-right{
+    position: absolute !important;
+    right: -8% !important;
+}

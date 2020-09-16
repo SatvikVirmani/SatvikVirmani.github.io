@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 80px auto;
+    width: 80%;
+    padding: 50px 0;
+}
+#myBtnContainer{
+    margin: 80px auto;
+    width: 100%;
+}
+.button-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.logo-icon{
+    color: #fff !important;
+}
+.column {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.uk-button.active {
+    background-color: #1e87f0 !important;
+    color: white;
+}

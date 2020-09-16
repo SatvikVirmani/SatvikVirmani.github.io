@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url("global.css");
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999999999999999;
+    width: 100%;
+    height: 80px;
+}
+.nav-container{
+    margin: 0 auto;
+    padding: 0 0;
+    width:  80%;
+    height: 100%;
+}
+.logo{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.logo-divider{
+    margin: 20px 16px 20px 0;
+    float: left;
+    height: 40px;
+    width: 2px;
+    background: #000;
+}
+.logo-text{
+    float: left;
+    width: fit-content;
+    height: 80px;
+}
+.logo-text h1{
+    font: var(--h1-font);
+    line-height: 80px;
+}
+.nav{
+    margin: 0 40px;
+    width: 40%;
+    height: 80px;
+    float: right;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav li{
+    display: inline;
+    cursor: pointer;
+}
+.nav-link{
+    color:  #343434;
+    font: normal normal 500 18px Raleway, serif;
+    line-height: 80px;
+    text-decoration: none;
+}
+.nav li a:hover{
+    text-decoration: none;
+    color:  #343434;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border-bottom: 2px solid #423FA5;
+}
+.nav-link-active{
+    color: #423FA5 !important;
+}
+.toggle-btn{
+    display: none;
+    margin: 10px 0;
+    position: relative;
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+.bars{
+    position: absolute;
+    margin: 15px auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 99999999999999;
+}
+.topbar{
+    width: 30px;
+    height: 2px;
+    background: #423FA5;
+    transition: all 0.4s;
+}
+.middlebar{
+    width: 30px;
+    height: 2px;
+    background: #423FA5;
+    transition: all 0.4s;
+}
+.bottombar{
+    width: 15px;
+    height: 2px;
+    background: #423FA5;
+    transition: all 0.4s;
+}
+.topbar.opentop{
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.4s;
+}
+.middlebar.openmiddle{
+    display: none;
+}
+.bottombar.openbottom{
+    width: 30px;
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: all 0.4s;
+}
+.mobile-nav{
+    z-index: 9999999;
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    transition: all 0.5s;
+}
+.mobile-nav.opennav{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.links{
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: 120px;
+    width: 100%;
+}
+.links ul{
+    padding: 0;
+    list-style-type: none;
+}
+.links ul li{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.links ul li a{
+    line-height: 40px;
+    text-decoration: none;
+    color: #020001;
+}
+.fab{
+    margin: 10px;
+    color: #020001;
+    opacity: 0.8;
+}
+.fab:active,
+.fab:hover{
+    color: #423FA5;
+    opacity: 1;
+}
+.footer{
+    width: 100%;
+    font-size: 12px !important;
+    background: #5E5E5E;
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
+@media (max-width: 1120px){
+    .nav{
+        display: none;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .logo-text h1{
+        line-height: 80px !important;
+    }
+    h1{
+        font: var(--h1-font);
+    }
+    h2{
+        font: normal normal 400 20px Quicksand,serif !important;
+    }
+    h4{
+        font: var(--h4-font);
+    }
+}
+@media (max-width: 900px){
+    h1{
+        font: normal normal 400 44px Quicksand,serif !important;
+    }
+    h2{
+        font: var(--h2-font);
+    }
+    h4{
+        font: var(--h4-font);
+    }
+}
+@media (max-width: 600px){
+    .nav{
+        height: 60px;
+    }
+    .nav-container{
+        width: 100%;
+        margin: 0;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .logo-divider{
+        margin: 15px 5px 15px 0;
+        float: left;
+        height: 30px;
+        width: 2px;
+        background: #000;
+    }
+    .logo-text{
+        height: 60px;
+    }
+    .logo-text h1{
+        line-height: 60px !important;
+        font-size: 28px !important;
+    }
+    .toggle-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .bars{
+        margin: 10px auto;
+        width: 30px;
+        height: 20px;
+    }
+}
